@@ -3,7 +3,25 @@
 		<ul>
 			{% assign current = page.url | downcase | split: '/' %}
 			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
-			<li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="{{ site.baseurl }}/blog">TheThinVoice</a></li>
+			<li>
+				<a href="">TheThinVoice</a>
+				<ul>
+					<li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
+					<li><a href="#">Activities</a></li>
+					<li><a href="https://">Instagram</a></li>
+				</ul>	
+			</li>
+			
+			<li>
+				<a href="">Tidaleuphoria</a>
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Activities</a></li>
+					<li><a href="https://">Instagram</a></li>
+				</ul>	
+			</li>
+			
+			<!--
 			<li>
 				<a href="">Dropdown</a>
 				<ul>
@@ -23,9 +41,12 @@
 					<li><a href="#">Veroeros feugiat</a></li>
 				</ul>
 			</li>
+			-->
+			<li><a href="#">News</a></li>
+			<li {% if current[1] == 'aboutme.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/aboutme.html">About Me</a></li>
 			<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
 			<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
 			<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
-			<li {% if current[1] == 'aboutme.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/aboutme.html">About Me</a></li>
+			
 		</ul>
 	</nav>
