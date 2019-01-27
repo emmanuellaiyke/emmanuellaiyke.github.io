@@ -616,11 +616,11 @@
 			}
 
 		#main .sidebar .default li {
-			border-color: #ffffff;
+			border-color: #cdcdcd;
 		}
 
 		#main .sidebar .default a {
-			color: #464646;
+			color: #ffffff;
 		}
 
 		#main .sidebar > :first-child {
