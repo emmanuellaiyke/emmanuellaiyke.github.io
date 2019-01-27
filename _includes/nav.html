@@ -18,6 +18,7 @@
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Activities</a></li>
 					<li><a href="https://www.instagram.com/tidaleuphoria/">Instagram</a></li>
+					<li><a href="#">News</a></li>
 				</ul>	
 			</li>
 			<li>
@@ -26,6 +27,7 @@
 					<li><a href="#">Undergraduate</a></li>
 					<li><a href="#">Graduate</a></li>
 					<li><a href="#">Postgraduate</a></li>
+					<li><a href="#">News</a></li>
 				</ul>	
 			</li>
 			<li><a href="#">Gallery</a></li>
@@ -50,11 +52,12 @@
 				</ul>
 			</li>
 			-->
-			<li><a href="#">News</a></li>
+			
 			<li {% if current[1] == 'aboutme.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/aboutme.html">About Me</a></li>
+			<!--
 			<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
 			<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
 			<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
-			
+			-->
 		</ul>
 	</nav>
